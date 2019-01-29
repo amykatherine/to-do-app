@@ -3,7 +3,7 @@ function onReady() {
   const newToDoText = document.getElementById('newToDoText');
   const toDoList = document.getElementById('toDoList');
 
-  addToForm.addEventListener('submit' () => {
+  addToForm.addEventListener('submit', event => {
     event.preventDefault();
 
     // get the text
@@ -34,7 +34,6 @@ function onReady() {
 // using the ES6 const keyword instead of var to lock these assignments into place
 // With a single-page application (SPA), we neither want the page to reload nor do we want to redirect the user to a new page. Must prevent the default form submission behavior from taking place. pass in the event as an argument to the event handler, and then call the  preventDefault() method on it within the function.
 // let has a narrower scope than var. let and  const are block-scoped, and const prevents accidental reassignment.
-
 
 window.onload = function() {
   onReady();
